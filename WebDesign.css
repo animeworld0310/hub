@@ -7,31 +7,35 @@
   
   body {
     font-family: Acme, Iceberg;
-    background-color: #70daa8;
+    background-image: linear-gradient(to right, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00);
+
   }
   
   .column
   {
       width:100%;
-      float:left;
-      padding:100px 10px;
+      float: center;
+      padding:0px 0px;
   }
 
   .row:after{
       content:"";
-      display:table;
+      display:flex;
       clear:both;
   }
 
  
 
-  @media screen and (max-width:98%)
+  @media screen and (max-width:600000px)
   {
       .column
       {
           width:100%;
-          display:block;
-          margin-bottom: 2px;
+          display:;
+          margin-bottom: 10px;
+	  margin-top: 10px;
+	  margin-left: 10px;
+	  margin-right: 10px;
       }
   }
 
@@ -43,13 +47,17 @@
       background-color:white;
       text-align:center;
       border-radius:7px;
-      padding-bottom:2px;
+      padding-bottom:1px;
+      padding-left:1px;
+      padding-right:1px;
+      padding-top:1px;
   }
 
   .title
   {
       color:skyblue;
       font-size:20px;
+      font-family:'Iceberg';
   }
 
 
