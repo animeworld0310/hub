@@ -12,7 +12,7 @@
   
   .column
   {
-      width:50%;
+      width:100%;
       float:left;
       padding:100px 10px;
   }
@@ -38,47 +38,24 @@
   .card
   {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      max-width:300px;
+      max-width:96%;
       margin:auto;
       background-color:white;
       text-align:center;
-      border-radius:40px;
-      padding-bottom:15px;
+      border-radius:7px;
+      padding-bottom:2px;
   }
 
   .title
   {
-      color:gray;
+      color:Blue;
       font-size:18px;
   }
 
-  button
-  {
-      border:none;
-      padding:8px;
-      display: inline-block;
-      color:white;
-      background-color:black;
-      cursor:pointer;
-      width:70%;
-      border-radius:20px;
-      font-size:18px;
-      text-align:center;
-  }
 
-  a{
-      text-decoration: none;
-      font-size:22px;
-      color:black;
-  }
-
-  a:hover,button:hover{
-      opacity: 0.6;
-  }
 
 body{
 	font-family: 'Acme';
-	font-weight: bolder;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -88,11 +65,6 @@ body{
 .buttonContainer{
 	margin-top:100px;
 	text-align:center;
-}
-
-h1{
-	color:rgba(69, 69, 69, 1);
-	line-height:2em;
 }
 
 /* BUTTON CSS
