@@ -7,13 +7,13 @@
   
   body {
     font-family: Acme, Iceberg;
-    background-image: linear-gradient(to right, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00);
+   background-image: linear-gradient(to right, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00);
   }
   
   .column
   {
       width:100%;
-      float: center;
+      float:center;
       padding:0px 0px;
   }
 
@@ -52,14 +52,17 @@
   .title
   {
       color:skyblue;
-      font-size:20px;
+      font-size:18px;
       font-family:'Iceberg';
   }
+
+ 
 
 
 
 body{
 	font-family: 'Acme';
+	font-weight: bolder;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -71,13 +74,18 @@ body{
 	text-align:center;
 }
 
+h1{
+	color:rgba(69, 69, 69, 1);
+	line-height:2em;
+}
+
 /* BUTTON CSS
 ------------------------------------------- */
 
 a.button{
   display:inline-block;
 	
-	font:normal normal 524 0.7em 'Acme';
+	font:normal normal 524 .8em 'Acme';
 	text-decoration:none;	
 	
 	color:rgba(0, 0, 0, 1);
@@ -98,4 +106,3 @@ a.button:hover{
 	background-color:rgba(0, 0, 0, 1);
 	background-position: -100% 100%;
 }
-
