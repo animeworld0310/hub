@@ -7,7 +7,7 @@
   
   body {
     font-family: Acme, Iceberg;
-    background-color: #70daa8;
+   background-image: linear-gradient(to right, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00);
   }
   
   .column
@@ -38,9 +38,9 @@
   .card
   {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      max-width:99%;
+      max-width:100%;
       margin:auto;
-      background-color:white;
+      background-color:brown;
       text-align:center;
       border-radius:7px;
       padding-bottom:1px;
