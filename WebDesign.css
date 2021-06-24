@@ -31,14 +31,14 @@
       {
           width:100%;
           display:block;
-          margin-bottom: 20px;
+          margin-bottom: 2px;
       }
   }
 
   .card
   {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      max-width:96%;
+      max-width:98%;
       margin:auto;
       background-color:white;
       text-align:center;
@@ -48,8 +48,8 @@
 
   .title
   {
-      color:Blue;
-      font-size:18px;
+      color:sky blue;
+      font-size:20px;
   }
 
 
@@ -73,7 +73,7 @@ body{
 a.button{
   display:inline-block;
 	
-	font:normal normal 524 1.1em 'Acme';
+	font:normal normal 524 0.7em 'Acme';
 	text-decoration:none;	
 	
 	color:rgba(0, 0, 0, 1);
