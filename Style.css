@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&family=Amaranth&family=Algerian&family=Acme&family=Graduate&family=Iceberg&family=Salsa&display=swap');
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  background-image: radial-gradient(circle, #f857a6, #ff5393, #ff517f, #ff536c, #ff5858);
+
+  padding: 0;
+
+  height: 100vh;
+
+}
+
+.container {
+
+  margin: 2px;
+
+}
+
+.row {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  padding-top: .5vh;
+
+  padding-bottom: .5vh;
+
+}
+
+.tabs {
+
+  background: #FFFFFF;
+
+  position: relative;
+
+/*absolute*/
+
+  flex: 1;
+
+  max-width: 100%;
+
+  border: 2px solid black;
+
+  height: 999px;
+
+ /* Change the height later*/
+
+  margin: 5px;
+
+  padding-top: 6px;
+
+  padding-bottom: 6px;
+
+  padding-right: 6px;
+
+  padding-left: 6px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.tabs .tab-body {
+
+  position: relative;
+
+  width: 100%;
+
+  height: calc(100% - 60px);
+
+}
+
+.tabs .tab-body > div {
+
+  position: absolute;
+
+  top: 0px;
+
+  left: 0px;
+
+  width: 100%;
+
+  height: 100%;
+
+  padding-top: 6px;
+
+  top: -150%;
+
+/*-200%*/
+
+  opacity: 0;
+
+  transform: scale(0.85);
+
+/*.9*/
+
+  transition: top 0ms ease-in-out 0ms,
+
+             opacity 500ms ease-in-out,
+
+             transform 500ms ease-in-out;
+
+}
+
+.tabs .tab-body > div.active {
+
+  top: 0px;
+
+  opacity: 1;
+
+  transform: scale(1);
+
+}
+
+.tabs .tab-header {
+
+  width: 100%;
+
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.tabs .tab-header > div {
+
+  flex: 1;
+
+  position: relative;
+
+  text-align: center;
+
+  line-height: 60px;
+
+  color: #888;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-family: Texturina;
+
+}
+
+.tabs .tab-header > div:before {
+
+  content: "";
+
+  position: absolute;
+
+  bottom: 0px;
+
+  left: 0px;
+
+  width: 0%;
+
+  height: 5px;
+
+  border-radius: 5px;
+
+}
+
+.tabs .tab-header > div.active:before {
+
+  transition: all 500ms ease-in-out;
+
+  width: 100%;
+
+}
+
+.tabs .tab-header > div:nth-child(1).active {
+
+  color: #00acee;
+
+}
+
+.tabs .tab-header > div:nth-child(1):before {
+
+  background: #00acee;
+
+}
+
+.tabs .tab-header > div:nth-child(2).active {
+
+  color: #34a853;
+
+}
+
+.tabs .tab-header > div:nth-child(2):before {
+
+  background: #34a853;
+
+}
+
+.tabs .tab-header > div:nth-child(3).active {
+
+  color: orange;
+
+}
+
+.tabs .tab-header > div:nth-child(3):before {
+
+  background: orange;
+
+}
+
+.tabs .tab-header > div:nth-child(4).active {
+
+  color: #dc8c00;
+
+}
+
+.tabs .tab-header > div:nth-child(4):before {
+
+  background: #dc8c00;
+
+}
+
+.info-card {
+
+  background: #FFFFFF;
+
+  position: relative;
+
+  flex: 1;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 5px;
+
+  border-radius: 10px;
+
+  border: 2px solid black;
+
+  padding-top: 6px;
+
+  padding-bottom: 6px;
+
+  padding-right: 8px;
+
+  padding-left: 8px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.link-container-card {
+
+  background: #FFFFFF;
+
+  position: relative;
+
+  flex: 1;
+
+  max-width: 100%;
+
+  border: 2px solid black;
+
+  height: auto;
+
+  margin: 5px;
+
+  padding-top: 6px;
+
+  padding-bottom: 6px;
+
+  padding-right: 6px;
+
+  padding-left: 6px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.link-card {
+
+  background: #FFFFFF;
+
+  position: relative;
+
+  flex: 1;
+
+  border: 1.5px solid black;
+
+  max-width: 100%;
+
+  padding-top: 6px;
+
+  padding-bottom: 4px;
+
+  padding-right: 8px;
+
+  padding-left: 8px;
+
+  height: auto;
+
+  margin-bottom: 5px;
+
+  margin-top: 5px;
+
+  border-radius: 7px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.movielink-card {
+
+  background: #FFFFFF;
+
+  position: relative;
+
+  flex: 1;
+
+  border: 1.5px solid black;
+
+  max-width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding-top: 6px;
+
+  padding-bottom: 6px;
+
+  padding-right: 8px;
+
+  padding-left: 8px;
+
+  height: auto;
+
+  margin: 5px;
+
+  border-radius: 7px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.aspect-div {
+
+  --ar: 9/16;
+
+ /* Aspect Ratio */
+
+/* Do Not Edit */
+
+  position: relative;
+
+  height: 0;
+
+  width: 100%;
+
+  padding-bottom: calc( var(--ar) * 100% );
+
+}
+
+/* Child */
+
+.img {
+
+       /* Don't influence parent's height */
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+       /* Size fully */
+
+  width: 100%;
+
+  height: 100%;
+
+       /* Center image and crop overflowing bits */
+
+  object-fit: cover;
+
+  object-position: center;
+
+}
+
+.image-card {
+
+  display: flex;
+
+  background: #FFFFFF;
+
+  flex: 1;
+
+  border: 2px solid black;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  margin: 5px;
+
+}
+
+.img {
+
+  flex: 1;
+
+}
+
+.title {
+
+  color: black;
+
+  font-weight: bold;
+
+  font-size: 17px;
+
+  padding-bottom: 3px;
+
+  font-family: 'iceberg';
+
+}
+
+.title2 {
+
+  color: black;
+
+  font-size: 14px;
+
+  font-family: 'Acme';
+
+}
+
+.title3 {
+
+  color: black;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  padding-top: 2px;
+
+  padding-bottom: 2px;
+
+  font-family: 'salsa';
+
+}
+
+.title4 {
+
+  color: black;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  font-family: 'Amaranth';
+
+}
+
+.title5 {
+
+  color: #FF5F1F;
+
+  padding-top: 3px;
+
+  padding-bottom: 3px;
+
+  padding-right: 1px;
+
+  padding-left: 1px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  font-family: 'Graduate';
+
+}
+
+.title6 {
+
+  color: #339966;
+
+  font-size: 14px;
+
+  padding-top: 2px;
+
+  padding-bottom: 2px;
+
+  font-family: 'Acme';
+
+}
+
+.title7 {
+
+  color: #FF5F15;
+
+  font-weight: bold;
+
+  font-size: 17px;
+
+  padding-top: 2px;
+
+  padding-bottom: 4px;
+
+  padding-right: 1px;
+
+  padding-left: 1px;
+
+  font-family: 'Algerian';
+
+}
+
+/*3px black border */
+
+.style1 {
+
+  border-top: 3px solid black;
+
+}
+
+/* Dashed black border */
+
+.style2 {
+
+  border-top: 1px dashed black;
+
+}
+
+/* Dotted black border */
+
+.style3 {
+
+  border-top: 1px dotted black;
+
+}
+
+/* 1px black border */
+
+.style4 {
+
+  border: 1px solid black;
+
+}
+
+@media (max-width:100%) {
+
+  .image-card {
+
+    flex: 100%;
+
+    max-width: 100vh;
+
+  }
+
+  .info-card {
+
+    flex: 100%;
+
+    max-width: 100%;
+
+  }
+
+  .link-card {
+
+    flex: 100%;
+
+    max-width: 100%;
+
+  }
+
+}
+
+  /* unvisited link */
+
+a:link {
+
+  color: DeepSkyBlue;
+
+}
+
+  /* visited link */
+
+a:visited {
+
+  color: #228B22;
+
+}
+
+  /* mouse over link */
+
+a:hover {
+
+  color: hotpink;
+
+}
+
+  /* selected link */
+
+a:active {
+
+  color: crimson;
+
+}
+
+.buttonContainer {
+
+  margin: 1px;
+
+  text-align: center;
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+/* BUTTON CSS
+
+------------------------------------------- */
+
+a.button {
+
+  display: inline-block;
+
+  font: normal normal 500 1em 'Acme';
+
+  text-decoration: none;
+
+  color: lrgba(0, 0, 0, 1);
+
+  color: vrgba(0, 0, 0, 1);
+
+  color: hrgba(0, 0, 0, 1);
+
+  color: argba(0, 0, 0, 1);
+
+  background-color: transparent;
+
+  border: 2px solid rgba(0, 0, 0, 1);
+
+  border-radius: 24px;
+
+  padding: .1em .7em;
+
+  margin-top: 2px;
+
+  margin-bottom: 2px;
+
+  background-size: 200% 100%;
+
+  background-image: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 1) 50%);
+
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+
+}
+
+a.button:hover {
+
+  color: rgba(255, 255, 255, 1);
+
+  background-color: rgba(0, 0, 0, 1);
+
+  background-position: -100% 100%;
+
+}
+
+/*---Movie Button---*/
+
+  
+
+  
+
+.moviebuttonContainer {
+
+  margin-top: 1px;
+
+  text-align: center;
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+/* BUTTON CSS
+
+------------------------------------------- */
+
+a.moviebutton {
+
+  display: inline-block;
+
+  font: normal normal 500 1.7em 'Acme';
+
+  text-decoration: none;
+
+  color: lrgba(0, 0, 0, 1);
+
+  color: vrgba(0, 0, 0, 1);
+
+  color: hrgba(0, 0, 0, 1);
+
+  color: argba(0, 0, 0, 1);
+
+  background-color: transparent;
+
+  border: 2px solid rgba(0, 0, 0, 1);
+
+  border-radius: 24px;
+
+  padding: .1em .7em;
+
+  margin-top: 2px;
+
+  margin-bottom: 2px;
+
+  background-size: 200% 100%;
+
+  background-image: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 1) 50%);
+
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+
+}
+
+a.moviebutton:hover {
+
+  color: rgba(255, 255, 255, 1);
+
+  background-color: rgba(0, 0, 0, 1);
+
+  background-position: -100% 100%;
+
+}
