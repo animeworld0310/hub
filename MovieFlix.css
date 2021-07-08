@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina&family=Amaranth&family=Algerian&family=Acme&family=Graduate&family=Iceberg&family=Salsa&display=swap');
 
  * {
 
@@ -718,7 +717,7 @@
 
      display: inline-block;
 
-     font: normal normal 500 27rem 'Acme';
+     font: normal normal 500 20rem 'Acme';
 
      text-decoration: none;
 
