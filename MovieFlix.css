@@ -28,8 +28,8 @@
  body {
 
      margin: 0;
-
-     background: #4CB8C4;
+      
+     background-image: linear-gradient(to right, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00);
 
      padding: 0;
 
